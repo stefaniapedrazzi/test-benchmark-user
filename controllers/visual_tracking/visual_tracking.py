@@ -129,7 +129,7 @@ while robot.step(timestep) != -1:
                 r = ord(rawString[index + 2])
             index += 4
             # Yellow color threshold.
-            if b < 50 and g > 180 and r > 180:
+            if b < 30 and g > 180 and r > 180:
                 maskRGB[j][i] = True
 
     # Find blobs contours in the mask.
